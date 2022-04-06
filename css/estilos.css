@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEF9BF;
+    align-items: center;
+}
+
+.titulo{
+    width: 100%;
+    height: 63px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66p;
+    color: #75B79E;
+    text-align: center;
+    padding: 40px 0;
+
+}
+
+.cartas{
+    width: 117px;
+    background: #A7E9AF;
+    border: 1px solid #99CEA8;height: 146px;
+    border-radius: 5px;
+    /*ackground-image: url(front.png);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 47px 0;
+}
+
+.cartas img{
+    width: 100px;
+    height: 100px;
+}
