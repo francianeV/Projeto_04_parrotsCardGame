@@ -7,10 +7,16 @@ body{
     background-color: #EEF9BF;
     align-items: center;
 }
+.conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .titulo{
     width: 100%;
-    height: 63px;
+    height: 150px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -18,23 +24,54 @@ body{
     line-height: 66p;
     color: #75B79E;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
 
+}
+
+.corpo-cartas{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 .cartas{
     width: 117px;
+    height: 146px;
     background: #A7E9AF;
-    border: 1px solid #99CEA8;height: 146px;
+    border: 1px solid #99CEA8;
     border-radius: 5px;
-    /*ackground-image: url(front.png);*/
+    background-image: url("/imagens/front.png");
+    background-size: 100px 100px;
+    background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 47px 0;
+    justify-content:space-between;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 34px;
+    
+    
+    
 }
 
-.cartas img{
-    width: 100px;
-    height: 100px;
+@media (max-width: 614px){
+    .conteiner{
+        width: 100%;
+    }
+
+    .titulo{
+        width: 100%;
+    }
+
+    .corpo-cartas{
+        width: 100%;
+    }
+    
 }
+
+
