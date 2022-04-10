@@ -1,77 +1,78 @@
-*{
-    box-sizing: border-box;
-}
 
-body{
+  
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #EEF9BF;
-    align-items: center;
-}
-.conteiner{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.titulo{
+header {
     width: 100%;
-    height: 150px;
+    text-align: center;
+    margin: 40px auto;     
+}
+
+h1 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 56px;
-    line-height: 66p;
+    line-height: 66px;
+    letter-spacing: -0.004em;
     color: #75B79E;
-    text-align: center;
-    padding: 50px 0;
-
 }
 
-.corpo-cartas{
-    width: 1000px;
-    height: 100%;
+.tabuleiro {
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin: 0px auto;
 }
 
-.cartas{
+.carta { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 117px;
     height: 146px;
     background: #A7E9AF;
     border: 1px solid #99CEA8;
+    box-sizing: border-box;
     border-radius: 5px;
-    background-image: url("/imagens/front.png");
-    background-size: 100px 100px;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 34px;
-    
-    
-    
+    margin: 0px 34px 34px 34px;
 }
 
-@media (max-width: 614px){
-    .conteiner{
-        width: 100%;
-    }
-
-    .titulo{
-        width: 100%;
-    }
-
-    .corpo-cartas{
-        width: 100%;
-    }
-    
+.traseira-carta {
+    width: 100px;
+    height: 100px;
 }
 
+.frente-carta {
+    width: 100px;
+    height: 100px;
+    transform: rotateY(180deg);
+}
 
+.escondido {
+    display: none;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.p {
+    display: none;
+}
+
+@media (max-width: 614px) {
+	h1{
+    font-size: 36px;
+    line-height: 42px;
+    }
+
+    .tabuleiro{
+        width: 100%;
+    }
+}
