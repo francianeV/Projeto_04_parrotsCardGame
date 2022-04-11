@@ -21,13 +21,14 @@ h1 {
     color: #75B79E;
 }
 
-.tabuleiro {
+.corpo-cartas {
     width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 0px auto;
+    margin-top: 50px;
 }
 
 .carta { 
@@ -66,13 +67,50 @@ h1 {
     display: none;
 }
 
+.relogio {
+    width: 110px;
+    height: 40px;
+    position: fixed;
+    top: 100px;
+    right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 5px solid #75B79E;
+    box-shadow: 4px 4px 4px #99CEA8;
+  }
+  
+  .relogio p {
+    font-weight: bold;
+    color: #75B79E;
+  }
+  
+  .relogio-minutos {
+    margin-right: 0.2rem;
+  }
+
+  .conteiner{
+      display: flex;
+      width: 100%;
+  }
+
 @media (max-width: 614px) {
 	h1{
     font-size: 36px;
     line-height: 42px;
     }
 
-    .tabuleiro{
+    .corpo-cartas{
         width: 100%;
     }
+
+    .relogio{
+        position: initial;
+
+      
+    }
+
+  
+
 }
