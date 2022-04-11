@@ -93,9 +93,18 @@ function conferirFinalJogo (){
     if (numeroCartas === 0){
         alert (`Você ganhou em ${numeroJogadas} jogadas!!!! Tempo de jogo: ${contadorMinutos}m ${contadorSegundos}s`);
         clearInterval(interval);
+        
+        const deNovo = prompt("Reinicar o jogo? sim ou não");
 
-    }
+        if(deNovo === "sim"){
+            document.location.reload(true);
+        }else if(deNovo === "não"){
+            alert (`Você ganhou em ${numeroJogadas} jogadas!!!! Tempo de jogo: ${contadorMinutos}m ${contadorSegundos}s`);
+        }
+    
+        }
 }
+
 
 configurarJogo();
 cortarBaralho(numeroCartas);
